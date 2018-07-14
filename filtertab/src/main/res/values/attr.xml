@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="FilterTabView">
+        <attr name="tab_text_select_color" format="color"/>
+        <attr name="tab_text_unselect_color" format="color"/>
+        <attr name="tab_arrow_select_color" format="color"/>
+        <attr name="tab_arrow_unselect_color" format="color"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">filtertab</string>
+
+    <item name="tag_key_data" type="id" />
+    <item name="tag_key_position" type="id" />
+
+    <string name="area">区域</string>
+    <string name="total_price">总价</string>
+    <string name="house_type">房型</string>
+    <string name="filter">筛选</string>
+    <string name="min_price">最小</string>
+    <string name="max_price">最大</string>
+    <string name="to">至</string>
+    <string name="wan">万</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="all_empty">请输入价格</string>
+    <string name="min_empty">没有输入最小值无法计算</string>
+    <string name="max_empty">没有输入最大值无法计算</string>
+    <string name="min_max">最小值不能大于最大值</string>
+    <string name="reset">重置</string>
+</resources>

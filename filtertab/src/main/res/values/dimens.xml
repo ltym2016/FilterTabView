@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="tool_bar">44dp</dimen>
+    <dimen name="rv_height">400dp</dimen>
+
+</resources>

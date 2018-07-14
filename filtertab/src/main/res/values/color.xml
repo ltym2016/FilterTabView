@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="color_e1e1e1">#e1e1e1</color>
+    <color name="color_f1f1f1">#F1F1F1</color>
+    <color name="color_f2f2f2">#F2F2F2</color>
+    <color name="color_e8e8e8">#E8E8E8</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_dfdfdf">#dfdfdf</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_66000000">#66000000</color>
+    <color name="color_00000050">#70000000</color>
+    <color name="color_7A9BCC">#7A9BCC</color>
+    <color name="color_EBF3FE">#EBF3FE</color>
+    <color name="color_FBE9E7">#FBE9E7</color>
+    <color name="color_E29076">#E29076</color>
+    <color name="color_E1F8E0">#E1F8E0</color>
+    <color name="color_75AE75">#75AE75</color>
+    <color name="color_E5E9E8">#E5E9E8</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_7e7e7e">#7E7E7E</color>
+    <color name="color_6E6F6F">#6E6F6F</color>
+    <color name="color_FF6F00">#FF6F00</color>
+    <color name="color_B8B8B8">#B8B8B8</color>
+    <!--60%透明度-->
+    <color name="color_00000060">#99000000</color>
+
+
+    <!--主色调-->
+    <color name="color_main">#D61939</color>
+    <!--主色调30%透明度-->
+    <color name="color_main_30">#4cD61939</color>
+
+    <color name="color_home_header">#FE5A59</color>
+
+    <!--除特殊指定，默认字体颜色-->
+    <color name="color_default_text">@color/color_333333</color>
+    <color name="color_default_divide_line">@color/color_e6e6e6</color>
+</resources>
