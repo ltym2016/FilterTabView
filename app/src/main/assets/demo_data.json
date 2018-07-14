@@ -1,0 +1,1598 @@
+{
+  "area": [
+    {
+      "area_id": "-1",
+      "parent": 0,
+      "name": "不限",
+      "pinyin": "",
+      "sort": 0,
+      "map_lng": "",
+      "map_lat": "",
+      "map_zoom": 0,
+      "childAreas": []
+    },
+    {
+      "parent": 0,
+      "name": "天宁区",
+      "pinyin": "tianning",
+      "sort": 0,
+      "map_lng": "119.981180",
+      "map_lat": "31.785814",
+      "map_zoom": 11,
+      "area_id": 4,
+      "selected": 0,
+      "childAreas": [
+        {
+          "street_id": "-1",
+          "parent": 4,
+          "name": "不限",
+          "pinyin": "",
+          "sort": 100,
+          "map_lng": "",
+          "map_lat": "",
+          "map_zoom": 0,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "光华路",
+          "pinyin": "",
+          "sort": 0,
+          "map_lng": "119.953705",
+          "map_lat": "31.765814",
+          "map_zoom": 19,
+          "street_id": 37,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "文化宫",
+          "pinyin": "",
+          "sort": 1,
+          "map_lng": "119.970631",
+          "map_lat": "31.782865",
+          "map_zoom": 19,
+          "street_id": 24,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "青龙",
+          "pinyin": "",
+          "sort": 2,
+          "map_lng": "120.029745",
+          "map_lat": "31.804383",
+          "map_zoom": 12,
+          "street_id": 17,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "红梅",
+          "pinyin": "",
+          "sort": 3,
+          "map_lng": "119.993739",
+          "map_lat": "31.785652",
+          "map_zoom": 19,
+          "street_id": 32,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "竹林南路",
+          "pinyin": "",
+          "sort": 4,
+          "map_lng": "119.991035",
+          "map_lat": "31.789812",
+          "map_zoom": 19,
+          "street_id": 34,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "翠竹",
+          "pinyin": "",
+          "sort": 5,
+          "map_lng": "119.989955",
+          "map_lat": "31.802839",
+          "map_zoom": 19,
+          "street_id": 33,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "丽华",
+          "pinyin": "",
+          "sort": 6,
+          "map_lng": "119.993615",
+          "map_lat": "31.757660",
+          "map_zoom": 19,
+          "street_id": 35,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "劳动路",
+          "pinyin": "",
+          "sort": 7,
+          "map_lng": "119.913627",
+          "map_lat": "31.919514",
+          "map_zoom": 19,
+          "street_id": 36,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "桃园路",
+          "pinyin": "",
+          "sort": 8,
+          "map_lng": "119.979592",
+          "map_lat": "31.776237",
+          "map_zoom": 19,
+          "street_id": 38,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "九龙",
+          "pinyin": "",
+          "sort": 9,
+          "map_lng": "119.860867",
+          "map_lat": "32.039217",
+          "map_zoom": 19,
+          "street_id": 45,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "北环",
+          "pinyin": "",
+          "sort": 10,
+          "map_lng": "119.986003",
+          "map_lat": "31.794450",
+          "map_zoom": 19,
+          "street_id": 46,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "元丰巷",
+          "pinyin": "",
+          "sort": 11,
+          "map_lng": "119.974013",
+          "map_lat": "31.778767",
+          "map_zoom": 19,
+          "street_id": 48,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "中吴大道",
+          "pinyin": "",
+          "sort": 12,
+          "map_lng": "120.079097",
+          "map_lat": "31.713207",
+          "map_zoom": 19,
+          "street_id": 56,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "同济桥",
+          "pinyin": "",
+          "sort": 13,
+          "map_lng": "119.968152",
+          "map_lat": "31.772053",
+          "map_zoom": 19,
+          "street_id": 63,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "青山桥",
+          "pinyin": "",
+          "sort": 14,
+          "map_lng": "119.964431",
+          "map_lat": "31.795308",
+          "map_zoom": 19,
+          "street_id": 68,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "博爱路",
+          "pinyin": "",
+          "sort": 15,
+          "map_lng": "119.974159",
+          "map_lat": "31.787696",
+          "map_zoom": 19,
+          "street_id": 72,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "浦前西路",
+          "pinyin": "",
+          "sort": 16,
+          "map_lng": "119.965320",
+          "map_lat": "31.761684",
+          "map_zoom": 19,
+          "street_id": 81,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "劳动东路",
+          "pinyin": "",
+          "sort": 17,
+          "map_lng": "120.069854",
+          "map_lat": "31.725522",
+          "map_zoom": 19,
+          "street_id": 83,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "清凉路",
+          "pinyin": "",
+          "sort": 18,
+          "map_lng": "119.967236",
+          "map_lat": "31.768129",
+          "map_zoom": 19,
+          "street_id": 96,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "竹林北路 ",
+          "pinyin": "",
+          "sort": 19,
+          "map_lng": "120.011970",
+          "map_lat": "31.800222",
+          "map_zoom": 19,
+          "street_id": 99,
+          "selected": 0
+        },
+        {
+          "parent": 4,
+          "name": "其他小区",
+          "pinyin": "qitaxiaoqu",
+          "sort": 20,
+          "map_lng": "120.000000",
+          "map_lat": "31.790000",
+          "map_zoom": 12,
+          "street_id": 106,
+          "selected": 0
+        }
+      ]
+    },
+    {
+      "parent": 0,
+      "name": "钟楼区",
+      "pinyin": "zhonglou",
+      "sort": 1,
+      "map_lng": "119.907890",
+      "map_lat": "31.807796",
+      "map_zoom": 11,
+      "area_id": 3,
+      "selected": 0,
+      "childAreas": [
+        {
+          "street_id": "0",
+          "parent": 3,
+          "name": "不限",
+          "pinyin": "",
+          "sort": 100,
+          "map_lng": "",
+          "map_lat": "",
+          "map_zoom": 0,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "南大街",
+          "pinyin": "",
+          "sort": 0,
+          "map_lng": "119.961492",
+          "map_lat": "31.784932",
+          "map_zoom": 19,
+          "street_id": 10,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "广化桥",
+          "pinyin": "",
+          "sort": 1,
+          "map_lng": "119.956404",
+          "map_lat": "31.778002",
+          "map_zoom": 19,
+          "street_id": 11,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "清潭院街",
+          "pinyin": "",
+          "sort": 2,
+          "map_lng": "119.942190",
+          "map_lat": "31.774503",
+          "map_zoom": 19,
+          "street_id": 12,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "蓝天花园",
+          "pinyin": "",
+          "sort": 3,
+          "map_lng": "119.925555",
+          "map_lat": "31.786785",
+          "map_zoom": 19,
+          "street_id": 13,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "白云",
+          "pinyin": "",
+          "sort": 4,
+          "map_lng": "119.918306",
+          "map_lat": "31.786751",
+          "map_zoom": 19,
+          "street_id": 14,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "青枫公园",
+          "pinyin": "",
+          "sort": 5,
+          "map_lng": "119.905352",
+          "map_lat": "31.801923",
+          "map_zoom": 19,
+          "street_id": 15,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "莱蒙",
+          "pinyin": "",
+          "sort": 6,
+          "map_lng": "119.958410",
+          "map_lat": "31.783512",
+          "map_zoom": 19,
+          "street_id": 22,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "怀德桥",
+          "pinyin": "",
+          "sort": 7,
+          "map_lng": "119.953679",
+          "map_lat": "31.786648",
+          "map_zoom": 19,
+          "street_id": 25,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "晋陵中路",
+          "pinyin": "",
+          "sort": 8,
+          "map_lng": "119.982195",
+          "map_lat": "31.811104",
+          "map_zoom": 19,
+          "street_id": 27,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "江苏技术师范学院",
+          "pinyin": "",
+          "sort": 9,
+          "map_lng": "119.925661",
+          "map_lat": "31.760401",
+          "map_zoom": 19,
+          "street_id": 29,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "勤业",
+          "pinyin": "",
+          "sort": 10,
+          "map_lng": "119.999286",
+          "map_lat": "31.801245",
+          "map_zoom": 19,
+          "street_id": 31,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "局前街",
+          "pinyin": "",
+          "sort": 11,
+          "map_lng": "119.963968",
+          "map_lat": "31.786719",
+          "map_zoom": 19,
+          "street_id": 53,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "西新桥",
+          "pinyin": "",
+          "sort": 12,
+          "map_lng": "119.958070",
+          "map_lat": "31.796081",
+          "map_zoom": 19,
+          "street_id": 55,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "花园",
+          "pinyin": "",
+          "sort": 13,
+          "map_lng": "119.724579",
+          "map_lat": "31.666794",
+          "map_zoom": 19,
+          "street_id": 58,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "北大街",
+          "pinyin": "",
+          "sort": 14,
+          "map_lng": "119.961544",
+          "map_lat": "31.785043",
+          "map_zoom": 19,
+          "street_id": 60,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "凌家塘",
+          "pinyin": "",
+          "sort": 15,
+          "map_lng": "119.896116",
+          "map_lat": "31.838823",
+          "map_zoom": 19,
+          "street_id": 64,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "新闸",
+          "pinyin": "",
+          "sort": 16,
+          "map_lng": "119.899028",
+          "map_lat": "31.823667",
+          "map_zoom": 19,
+          "street_id": 65,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "劳动西路",
+          "pinyin": "",
+          "sort": 17,
+          "map_lng": "119.967971",
+          "map_lat": "31.771443",
+          "map_zoom": 19,
+          "street_id": 71,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "延陵西路",
+          "pinyin": "",
+          "sort": 18,
+          "map_lng": "119.970797",
+          "map_lat": "31.780825",
+          "map_zoom": 19,
+          "street_id": 73,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "小河沿",
+          "pinyin": "",
+          "sort": 19,
+          "map_lng": "119.843450",
+          "map_lat": "31.960395",
+          "map_zoom": 19,
+          "street_id": 74,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "关河西路",
+          "pinyin": "",
+          "sort": 20,
+          "map_lng": "119.940543",
+          "map_lat": "31.799964",
+          "map_zoom": 19,
+          "street_id": 78,
+          "selected": 0
+        },
+        {
+          "parent": 3,
+          "name": "吾悦国际",
+          "pinyin": "",
+          "sort": 21,
+          "map_lng": "119.955547",
+          "map_lat": "31.785786",
+          "map_zoom": 19,
+          "street_id": 103,
+          "selected": 0
+        }
+      ]
+    },
+    {
+      "parent": 0,
+      "name": "新北区",
+      "pinyin": "xinbei",
+      "sort": 2,
+      "map_lng": "119.977982",
+      "map_lat": "31.839498",
+      "map_zoom": 11,
+      "area_id": 5,
+      "selected": 0,
+      "childAreas": [
+        {
+          "street_id": "-1",
+          "parent": 5,
+          "name": "不限",
+          "pinyin": "",
+          "sort": 100,
+          "map_lng": "",
+          "map_lat": "",
+          "map_zoom": 0,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "新桥板块",
+          "pinyin": "",
+          "sort": 0,
+          "map_lng": "119.961255",
+          "map_lat": "31.869899",
+          "map_zoom": 16,
+          "street_id": 1,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "飞龙生活区",
+          "pinyin": "",
+          "sort": 1,
+          "map_lng": "119.936649",
+          "map_lat": "31.818742",
+          "map_zoom": 16,
+          "street_id": 2,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "太阳城",
+          "pinyin": "",
+          "sort": 2,
+          "map_lng": "119.978290",
+          "map_lat": "31.823962",
+          "map_zoom": 18,
+          "street_id": 18,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "恐龙园",
+          "pinyin": "",
+          "sort": 3,
+          "map_lng": "120.007869",
+          "map_lat": "31.830319",
+          "map_zoom": 19,
+          "street_id": 19,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "河海大学",
+          "pinyin": "",
+          "sort": 4,
+          "map_lng": "119.987965",
+          "map_lat": "31.828241",
+          "map_zoom": 13,
+          "street_id": 39,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "新区公园",
+          "pinyin": "",
+          "sort": 5,
+          "map_lng": "119.988945",
+          "map_lat": "31.833424",
+          "map_zoom": 18,
+          "street_id": 40,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "新北市政府",
+          "pinyin": "",
+          "sort": 6,
+          "map_lng": "119.980491",
+          "map_lat": "31.817073",
+          "map_zoom": 16,
+          "street_id": 41,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "燕山路",
+          "pinyin": "",
+          "sort": 7,
+          "map_lng": "119.984836",
+          "map_lat": "31.827827",
+          "map_zoom": 19,
+          "street_id": 47,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "薛家",
+          "pinyin": "",
+          "sort": 8,
+          "map_lng": "119.923285",
+          "map_lat": "31.863847",
+          "map_zoom": 19,
+          "street_id": 54,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "软件园",
+          "pinyin": "",
+          "sort": 9,
+          "map_lng": "120.002589",
+          "map_lat": "31.819176",
+          "map_zoom": 19,
+          "street_id": 67,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "三井",
+          "pinyin": "",
+          "sort": 10,
+          "map_lng": "119.974817",
+          "map_lat": "31.814960",
+          "map_zoom": 17,
+          "street_id": 76,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "天目山路",
+          "pinyin": "",
+          "sort": 11,
+          "map_lng": "119.985857",
+          "map_lat": "31.809741",
+          "map_zoom": 19,
+          "street_id": 77,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "魏村",
+          "pinyin": "",
+          "sort": 12,
+          "map_lng": "119.937439",
+          "map_lat": "31.975140",
+          "map_zoom": 19,
+          "street_id": 84,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "百丈",
+          "pinyin": "",
+          "sort": 13,
+          "map_lng": "119.978210",
+          "map_lat": "31.923650",
+          "map_zoom": 19,
+          "street_id": 93,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "圩塘",
+          "pinyin": "",
+          "sort": 14,
+          "map_lng": "119.998172",
+          "map_lat": "31.953732",
+          "map_zoom": 19,
+          "street_id": 95,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "万达广场",
+          "pinyin": "",
+          "sort": 15,
+          "map_lng": "119.976338",
+          "map_lat": "31.824208",
+          "map_zoom": 19,
+          "street_id": 97,
+          "selected": 0
+        },
+        {
+          "parent": 5,
+          "name": "常发",
+          "pinyin": "",
+          "sort": 16,
+          "map_lng": "119.986125",
+          "map_lat": "31.819322",
+          "map_zoom": 19,
+          "street_id": 101,
+          "selected": 0
+        }
+      ]
+    },
+    {
+      "parent": 0,
+      "name": "武进区",
+      "pinyin": "wujin",
+      "sort": 3,
+      "map_lng": "119.949721",
+      "map_lat": "31.707299",
+      "map_zoom": 11,
+      "area_id": 6,
+      "selected": 0,
+      "childAreas": [
+        {
+          "street_id": "-1",
+          "parent": 6,
+          "name": "不限",
+          "pinyin": "",
+          "sort": 100,
+          "map_lng": "",
+          "map_lat": "",
+          "map_zoom": 0,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "大学城",
+          "pinyin": "",
+          "sort": 0,
+          "map_lng": "119.953748",
+          "map_lat": "31.686147",
+          "map_zoom": 14,
+          "street_id": 20,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "湖塘乐购",
+          "pinyin": "",
+          "sort": 1,
+          "map_lng": "119.962889",
+          "map_lat": "31.724540",
+          "map_zoom": 19,
+          "street_id": 21,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "武进购物中心",
+          "pinyin": "",
+          "sort": 2,
+          "map_lng": "119.966305",
+          "map_lat": "31.724378",
+          "map_zoom": 19,
+          "street_id": 23,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "横山桥",
+          "pinyin": "",
+          "sort": 3,
+          "map_lng": "120.119733",
+          "map_lat": "31.769083",
+          "map_zoom": 19,
+          "street_id": 26,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "雪堰",
+          "pinyin": "",
+          "sort": 4,
+          "map_lng": "120.104588",
+          "map_lat": "31.514632",
+          "map_zoom": 19,
+          "street_id": 28,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "新天地",
+          "pinyin": "",
+          "sort": 5,
+          "map_lng": "119.960342",
+          "map_lat": "31.716673",
+          "map_zoom": 19,
+          "street_id": 30,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "淹城",
+          "pinyin": "",
+          "sort": 6,
+          "map_lng": "119.931405",
+          "map_lat": "31.709264",
+          "map_zoom": 19,
+          "street_id": 42,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "人民中路",
+          "pinyin": "",
+          "sort": 7,
+          "map_lng": "119.964284",
+          "map_lat": "31.733954",
+          "map_zoom": 19,
+          "street_id": 49,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "古方路",
+          "pinyin": "",
+          "sort": 8,
+          "map_lng": "119.953132",
+          "map_lat": "31.727570",
+          "map_zoom": 19,
+          "street_id": 50,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "太湖路",
+          "pinyin": "",
+          "sort": 9,
+          "map_lng": "119.997331",
+          "map_lat": "31.819814",
+          "map_zoom": 19,
+          "street_id": 59,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "武宜路",
+          "pinyin": "",
+          "sort": 10,
+          "map_lng": "119.943870",
+          "map_lat": "31.644641",
+          "map_zoom": 19,
+          "street_id": 61,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "奔牛镇",
+          "pinyin": "",
+          "sort": 11,
+          "map_lng": "119.824541",
+          "map_lat": "31.853614",
+          "map_zoom": 19,
+          "street_id": 62,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "邹区",
+          "pinyin": "",
+          "sort": 12,
+          "map_lng": "119.851805",
+          "map_lat": "31.797970",
+          "map_zoom": 19,
+          "street_id": 66,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "马杭",
+          "pinyin": "",
+          "sort": 13,
+          "map_lng": "119.990805",
+          "map_lat": "31.720545",
+          "map_zoom": 19,
+          "street_id": 69,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "滆湖区",
+          "pinyin": "",
+          "sort": 14,
+          "map_lng": "119.812657",
+          "map_lat": "31.671874",
+          "map_zoom": 19,
+          "street_id": 70,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "南夏墅",
+          "pinyin": "",
+          "sort": 15,
+          "map_lng": "119.950213",
+          "map_lat": "31.636723",
+          "map_zoom": 19,
+          "street_id": 79,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "湖塘",
+          "pinyin": "",
+          "sort": 16,
+          "map_lng": "119.988314",
+          "map_lat": "31.709120",
+          "map_zoom": 19,
+          "street_id": 85,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "郑陆镇",
+          "pinyin": "",
+          "sort": 17,
+          "map_lng": "120.087755",
+          "map_lat": "31.832280",
+          "map_zoom": 19,
+          "street_id": 89,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "卢家巷",
+          "pinyin": "",
+          "sort": 18,
+          "map_lng": "119.910255",
+          "map_lat": "31.697606",
+          "map_zoom": 19,
+          "street_id": 94,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "吾悦广场",
+          "pinyin": "",
+          "sort": 19,
+          "map_lng": "119.949367",
+          "map_lat": "31.732284",
+          "map_zoom": 19,
+          "street_id": 100,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "路劲又一城",
+          "pinyin": "",
+          "sort": 20,
+          "map_lng": "119.957080",
+          "map_lat": "31.710626",
+          "map_zoom": 19,
+          "street_id": 102,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "武进万达",
+          "pinyin": "",
+          "sort": 21,
+          "map_lng": "119.954689",
+          "map_lat": "31.738842",
+          "map_zoom": 19,
+          "street_id": 104,
+          "selected": 0
+        },
+        {
+          "parent": 6,
+          "name": "武进高新区",
+          "pinyin": "",
+          "sort": 22,
+          "map_lng": "119.965584",
+          "map_lat": "31.671299",
+          "map_zoom": 19,
+          "street_id": 105,
+          "selected": 0
+        }
+      ]
+    },
+    {
+      "parent": 0,
+      "name": "戚墅堰区",
+      "pinyin": "qishuyan",
+      "sort": 4,
+      "map_lng": "120.054763",
+      "map_lat": "31.762832",
+      "map_zoom": 11,
+      "area_id": 7,
+      "selected": 0
+    },
+    {
+      "parent": 0,
+      "name": "金坛",
+      "pinyin": "jintan",
+      "sort": 5,
+      "map_lng": "119.604511",
+      "map_lat": "31.729012",
+      "map_zoom": 11,
+      "area_id": 8,
+      "selected": 0,
+      "childAreas": [
+        {
+          "street_id": "-1",
+          "parent": 8,
+          "name": "不限",
+          "pinyin": "",
+          "sort": 100,
+          "map_lng": "",
+          "map_lat": "",
+          "map_zoom": 0,
+          "selected": 0
+        },
+        {
+          "parent": 8,
+          "name": "丹阳门",
+          "pinyin": "",
+          "sort": 0,
+          "map_lng": "0.000000",
+          "map_lat": "0.000000",
+          "map_zoom": 12,
+          "street_id": 44,
+          "selected": 0
+        },
+        {
+          "parent": 8,
+          "name": "五角场",
+          "pinyin": "",
+          "sort": 1,
+          "map_lng": "0.000000",
+          "map_lat": "0.000000",
+          "map_zoom": 12,
+          "street_id": 75,
+          "selected": 0
+        },
+        {
+          "parent": 8,
+          "name": "西门大街",
+          "pinyin": "",
+          "sort": 2,
+          "map_lng": "0.000000",
+          "map_lat": "0.000000",
+          "map_zoom": 12,
+          "street_id": 80,
+          "selected": 0
+        },
+        {
+          "parent": 8,
+          "name": "虹桥路",
+          "pinyin": "",
+          "sort": 3,
+          "map_lng": "0.000000",
+          "map_lat": "0.000000",
+          "map_zoom": 12,
+          "street_id": 86,
+          "selected": 0
+        },
+        {
+          "parent": 8,
+          "name": "东环一路",
+          "pinyin": "",
+          "sort": 4,
+          "map_lng": "0.000000",
+          "map_lat": "0.000000",
+          "map_zoom": 12,
+          "street_id": 87,
+          "selected": 0
+        },
+        {
+          "parent": 8,
+          "name": "文化路",
+          "pinyin": "",
+          "sort": 5,
+          "map_lng": "0.000000",
+          "map_lat": "0.000000",
+          "map_zoom": 12,
+          "street_id": 91,
+          "selected": 0
+        },
+        {
+          "parent": 8,
+          "name": "上庄路",
+          "pinyin": "",
+          "sort": 6,
+          "map_lng": "0.000000",
+          "map_lat": "0.000000",
+          "map_zoom": 12,
+          "street_id": 92,
+          "selected": 0
+        }
+      ]
+    },
+    {
+      "parent": 0,
+      "name": "溧阳",
+      "pinyin": "liyang",
+      "sort": 6,
+      "map_lng": "119.491108",
+      "map_lat": "31.421755",
+      "map_zoom": 11,
+      "area_id": 9,
+      "selected": 0,
+      "childAreas": [
+        {
+          "street_id": "-1",
+          "parent": 9,
+          "name": "不限",
+          "pinyin": "",
+          "sort": 100,
+          "map_lng": "",
+          "map_lat": "",
+          "map_zoom": 0,
+          "selected": 0
+        },
+        {
+          "parent": 9,
+          "name": "西大街",
+          "pinyin": "",
+          "sort": 0,
+          "map_lng": "0.000000",
+          "map_lat": "0.000000",
+          "map_zoom": 12,
+          "street_id": 51,
+          "selected": 0
+        },
+        {
+          "parent": 9,
+          "name": "朝阳街",
+          "pinyin": "",
+          "sort": 1,
+          "map_lng": "0.000000",
+          "map_lat": "0.000000",
+          "map_zoom": 12,
+          "street_id": 52,
+          "selected": 0
+        },
+        {
+          "parent": 9,
+          "name": "兴隆路",
+          "pinyin": "",
+          "sort": 2,
+          "map_lng": "0.000000",
+          "map_lat": "0.000000",
+          "map_zoom": 12,
+          "street_id": 88,
+          "selected": 0
+        },
+        {
+          "parent": 9,
+          "name": "石坝路",
+          "pinyin": "",
+          "sort": 3,
+          "map_lng": "0.000000",
+          "map_lat": "0.000000",
+          "map_zoom": 12,
+          "street_id": 90,
+          "selected": 0
+        }
+      ]
+    }
+  ],
+  "price": [
+    {
+      "tid": -1,
+      "name": "不限",
+      "selected": 1
+    },
+    {
+      "tid": 382,
+      "name": "50万以下",
+      "selected": 0
+    },
+    {
+      "tid": 280,
+      "name": "50-80万",
+      "selected": 0
+    },
+    {
+      "tid": 291,
+      "name": "80-100万",
+      "selected": 0
+    },
+    {
+      "tid": 293,
+      "name": "100-120万",
+      "selected": 0
+    },
+    {
+      "tid": 294,
+      "name": "120-150万",
+      "selected": 0
+    },
+    {
+      "tid": 295,
+      "name": "150-200万",
+      "selected": 0
+    },
+    {
+      "tid": 297,
+      "name": "200万以上",
+      "selected": 0
+    }
+  ],
+  "houseType": [
+    {
+      "tid": -1,
+      "name": "不限",
+      "selected": 1
+    },
+    {
+      "tid": 312,
+      "name": "一室",
+      "selected": 0
+    },
+    {
+      "tid": 313,
+      "name": "二室",
+      "selected": 0
+    },
+    {
+      "tid": 314,
+      "name": "三室",
+      "selected": 0
+    },
+    {
+      "tid": 330,
+      "name": "四室",
+      "selected": 0
+    },
+    {
+      "tid": 331,
+      "name": "五室",
+      "selected": 0
+    },
+    {
+      "tid": 332,
+      "name": "五室以上",
+      "selected": 0
+    }
+  ],
+  "mulSelect": [
+    {
+      "sortname": "排序",
+      "sortdata": [
+        {
+          "tid": -1,
+          "name": "不限",
+          "selected": 1
+        },
+        {
+          "tid": 1,
+          "name": "总价从低到高",
+          "selected": 0
+        },
+        {
+          "tid": 2,
+          "name": "单价从低到高",
+          "selected": 0
+        },
+        {
+          "tid": 3,
+          "name": "最新上架时间",
+          "selected": 0
+        },
+        {
+          "tid": 4,
+          "name": "总价从高到低",
+          "selected": 0
+        },
+        {
+          "tid": 5,
+          "name": "单价从高到低",
+          "selected": 0
+        }
+      ],
+      "sortkey": "sort"
+    },
+    {
+      "sortname": "来源",
+      "sortdata": [
+        {
+          "tid": -1,
+          "name": "不限",
+          "selected": 1
+        },
+        {
+          "tid": 1,
+          "name": "个人",
+          "selected": 0
+        },
+        {
+          "tid": 2,
+          "name": "中介",
+          "selected": 0
+        }
+      ],
+      "sortkey": "source"
+    },
+    {
+      "sortname": "面积",
+      "sortdata": [
+        {
+          "tid": -1,
+          "name": "不限",
+          "selected": 1
+        },
+        {
+          "tid": 282,
+          "name": "50平米以下",
+          "selected": 0
+        },
+        {
+          "tid": 283,
+          "name": "50-70平米",
+          "selected": 0
+        },
+        {
+          "tid": 284,
+          "name": "70-90平米",
+          "selected": 0
+        },
+        {
+          "tid": 285,
+          "name": "90-110平米",
+          "selected": 0
+        },
+        {
+          "tid": 286,
+          "name": "110-130平米",
+          "selected": 0
+        },
+        {
+          "tid": 287,
+          "name": "130-150平米",
+          "selected": 0
+        },
+        {
+          "tid": 288,
+          "name": "150-200平米",
+          "selected": 0
+        },
+        {
+          "tid": 290,
+          "name": "200平米以上",
+          "selected": 0
+        }
+      ],
+      "sortkey": "size"
+    },
+    {
+      "sortname": "楼层",
+      "sortdata": [
+        {
+          "tid": -1,
+          "name": "不限",
+          "selected": 1
+        },
+        {
+          "tid": 275,
+          "name": "高层",
+          "selected": 0
+        },
+        {
+          "tid": 276,
+          "name": "中层",
+          "selected": 0
+        },
+        {
+          "tid": 277,
+          "name": "低层",
+          "selected": 0
+        },
+        {
+          "tid": 364,
+          "name": "地下室",
+          "selected": 0
+        }
+      ],
+      "sortkey": "floor"
+    },
+    {
+      "sortname": "朝向",
+      "sortdata": [
+        {
+          "tid": -1,
+          "name": "不限",
+          "selected": 1
+        },
+        {
+          "tid": 138,
+          "name": "东",
+          "selected": 0
+        },
+        {
+          "tid": 139,
+          "name": "南",
+          "selected": 0
+        },
+        {
+          "tid": 140,
+          "name": "西",
+          "selected": 0
+        },
+        {
+          "tid": 141,
+          "name": "北",
+          "selected": 0
+        },
+        {
+          "tid": 142,
+          "name": "东南",
+          "selected": 0
+        },
+        {
+          "tid": 143,
+          "name": "西南",
+          "selected": 0
+        },
+        {
+          "tid": 145,
+          "name": "东北",
+          "selected": 0
+        },
+        {
+          "tid": 144,
+          "name": "西北",
+          "selected": 0
+        }
+      ],
+      "sortkey": "face"
+    },
+    {
+      "sortname": "楼龄",
+      "sortdata": [
+        {
+          "tid": -1,
+          "name": "不限",
+          "selected": 1
+        },
+        {
+          "tid": 335,
+          "name": "2年以下",
+          "selected": 0
+        },
+        {
+          "tid": 333,
+          "name": "2-5年",
+          "selected": 0
+        },
+        {
+          "tid": 334,
+          "name": "5-10年",
+          "selected": 0
+        },
+        {
+          "tid": 336,
+          "name": "10年以上",
+          "selected": 0
+        }
+      ],
+      "sortkey": "age"
+    },
+    {
+      "sortname": "装修",
+      "sortdata": [
+        {
+          "tid": -1,
+          "name": "不限",
+          "selected": 1
+        },
+        {
+          "tid": 133,
+          "name": "毛坯",
+          "selected": 0
+        },
+        {
+          "tid": 134,
+          "name": "普通装修",
+          "selected": 0
+        },
+        {
+          "tid": 135,
+          "name": "中等装修",
+          "selected": 0
+        },
+        {
+          "tid": 136,
+          "name": "精装修",
+          "selected": 0
+        },
+        {
+          "tid": 137,
+          "name": "豪华装修",
+          "selected": 0
+        }
+      ],
+      "sortkey": "zx"
+    },
+    {
+      "sortname": "特色",
+      "sortdata": [
+        {
+          "tid": -1,
+          "name": "不限",
+          "selected": 1
+        },
+        {
+          "tid": 120,
+          "name": "学区房",
+          "selected": 0
+        },
+        {
+          "tid": 121,
+          "name": "满五年",
+          "selected": 0
+        },
+        {
+          "tid": 122,
+          "name": "南北通透",
+          "selected": 0
+        },
+        {
+          "tid": 123,
+          "name": "交通便利",
+          "selected": 0
+        },
+        {
+          "tid": 124,
+          "name": "业主直售",
+          "selected": 0
+        },
+        {
+          "tid": 125,
+          "name": "70年产权",
+          "selected": 0
+        },
+        {
+          "tid": 355,
+          "name": "满二唯一",
+          "selected": 0
+        },
+        {
+          "tid": 126,
+          "name": "精装修",
+          "selected": 0
+        },
+        {
+          "tid": 127,
+          "name": "单身公寓",
+          "selected": 0
+        }
+      ],
+      "sortkey": "ts"
+    }
+  ]
+}
