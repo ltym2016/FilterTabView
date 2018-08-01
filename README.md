@@ -1,4 +1,7 @@
 # FilterTabView
+
+[![Download](https://img.shields.io/badge/DownloadApp-2.1M-ff69b4.svg) ](https://github.com/ltym2016/FilterTabView/blob/master/app-debug.apk)
+
 ## 基于Popupwindow的下拉筛选控件
 <img src="https://github.com/ltym2016/FilterTabView/blob/master/video2gif_20180713_144109.gif" width="200"  align=center /> <img src="https://github.com/ltym2016/FilterTabView/blob/master/Screenshot1.png" width="200"  align=center /> <img src="https://github.com/ltym2016/FilterTabView/blob/master/Screenshot2.png" width="200"  align=center />
 <img src="https://github.com/ltym2016/FilterTabView/blob/master/Screenshot3.png" width="200"  align=center /> <img src="https://github.com/ltym2016/FilterTabView/blob/master/Screenshot4.png" width="200"  align=center />
