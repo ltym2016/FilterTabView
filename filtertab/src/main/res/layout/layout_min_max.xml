@@ -25,6 +25,7 @@
         android:gravity="center"
         android:hint="@string/min_price"
         android:lines="1"
+        android:maxLength="4"
         android:inputType="number"
         android:textColor="@color/color_default_text"
         android:textColorHint="@color/color_cccccc"
