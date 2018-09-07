@@ -1,6 +1,7 @@
 package com.samluys.filtertab.popupwindow;
 
 import android.content.Context;
+import android.graphics.drawable.GradientDrawable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,9 +16,10 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.samluys.filtertab.FilterResultBean;
-import com.samluys.filtertab.KeyboardUtils;
+import com.samluys.filtertab.util.KeyboardUtils;
 import com.samluys.filtertab.R;
-import com.samluys.filtertab.Utils;
+import com.samluys.filtertab.util.SpUtils;
+import com.samluys.filtertab.util.Utils;
 import com.samluys.filtertab.adapter.PopupSingleAdapter;
 import com.samluys.filtertab.base.BaseFilterBean;
 import com.samluys.filtertab.base.BasePopupWindow;
@@ -25,7 +27,9 @@ import com.samluys.filtertab.listener.OnFilterToViewListener;
 
 import java.util.List;
 
-
+/**
+ * 竖直可以输入价格的单选样式
+ */
 public class PriceSelectPopupWindow extends BasePopupWindow {
 
     private RecyclerView rv_content;
@@ -123,6 +127,9 @@ public class PriceSelectPopupWindow extends BasePopupWindow {
                 }
             }
         });
+
+        GradientDrawable myGrad = (GradientDrawable) btn_price_confirm.getBackground();
+        myGrad.setColor(SpUtils.getInstance(mContext).getColorMain());
 
         // 确定按钮
         btn_price_confirm.setOnClickListener(new View.OnClickListener() {

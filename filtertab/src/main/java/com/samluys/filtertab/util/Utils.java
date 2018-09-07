@@ -1,4 +1,4 @@
-package com.samluys.filtertab;
+package com.samluys.filtertab.util;
 
 import android.content.Context;
 import android.os.Build;
@@ -10,6 +10,9 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
 import android.view.WindowManager;
+
+import com.samluys.filtertab.DisplayHelper;
+import com.samluys.filtertab.StatusBarHelper;
 
 import java.io.File;
 import java.io.FileInputStream;

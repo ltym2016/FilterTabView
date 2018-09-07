@@ -1,4 +1,4 @@
-package com.samluys.filtertab;
+package com.samluys.filtertab.util;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

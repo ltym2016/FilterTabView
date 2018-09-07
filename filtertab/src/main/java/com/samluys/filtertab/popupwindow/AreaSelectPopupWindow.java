@@ -20,7 +20,9 @@ import com.samluys.filtertab.listener.OnFilterToViewListener;
 
 import java.util.List;
 
-
+/**
+ * 区域联动筛选Popupwindow
+ */
 public class AreaSelectPopupWindow extends BasePopupWindow implements OnAdapterRefreshListener{
 
 

@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextPaint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 
 import com.samluys.filtertab.R;
 import com.samluys.filtertab.base.BaseFilterBean;
+import com.samluys.filtertab.util.SpUtils;
 
 import java.util.List;
 
@@ -63,11 +65,16 @@ public class AreaParentAdapter extends RecyclerView.Adapter{
                     mList.get(0).setSelecteStatus(1);
                 }
 
+                TextPaint textPaint = viewHolder.tv_content.getPaint();
                 if (bean.getSelecteStatus() == 0) {
-                    viewHolder.tv_content.setTextColor(mContext.getResources().getColor(R.color.color_default_text));
+                    textPaint.setFakeBoldText(false);
+                    viewHolder.tv_content.setTextColor(SpUtils.getInstance(mContext).getTextUnSelect());
                     viewHolder.tv_content.setBackgroundColor(mContext.getResources().getColor(R.color.color_f5f5f5));
                 } else {
-                    viewHolder.tv_content.setTextColor(mContext.getResources().getColor(R.color.color_main));
+                    if (SpUtils.getInstance(mContext).getTextStyle() == 1) {
+                        textPaint.setFakeBoldText(true);
+                    }
+                    viewHolder.tv_content.setTextColor(SpUtils.getInstance(mContext).getTextSelect());
                     viewHolder.tv_content.setBackgroundColor(mContext.getResources().getColor(R.color.white));
                     Message msg = new Message();
                     msg.obj = position;

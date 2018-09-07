@@ -23,4 +23,9 @@ public class FilterTabConfig {
      */
     public final static int FILTER_TYPE_MUL_SELECT = 3;
 
+    /**
+     * 单个Gird样式Popupwindow
+     */
+    public final static int FILTER_TYPE_SINGLE_GIRD = 4;
+
 }

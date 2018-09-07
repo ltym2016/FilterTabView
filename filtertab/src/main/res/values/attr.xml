@@ -6,6 +6,17 @@
         <attr name="tab_text_unselect_color" format="color"/>
         <attr name="tab_arrow_select_color" format="color"/>
         <attr name="tab_arrow_unselect_color" format="color"/>
+        <attr name="tab_text_style" format="integer"/>
+        <attr name="text_default_color" format="color"/>
+        <attr name="color_main" format="color"/>
+        <attr name="btn_stroke_select_color" format="color"/>
+        <attr name="btn_stroke_unselect_color" format="color"/>
+        <attr name="btn_solid_select_color" format="color"/>
+        <attr name="btn_solid_unselect_color" format="color"/>
+        <attr name="btn_corner_radius" format="dimension"/>
+        <attr name="btn_text_select_color" format="color"/>
+        <attr name="btn_text_unselect_color" format="color"/>
+        <attr name="column_num" format="integer"/>
     </declare-styleable>
 
 </resources>

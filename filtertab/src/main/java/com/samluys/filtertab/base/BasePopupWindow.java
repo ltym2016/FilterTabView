@@ -1,16 +1,11 @@
 package com.samluys.filtertab.base;
 
 import android.app.Activity;
-import android.app.Application;
-import android.content.ComponentCallbacks;
 import android.content.Context;
-import android.content.res.Configuration;
 import android.graphics.Rect;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
-import android.support.annotation.NonNull;
 import android.util.AttributeSet;
-import android.util.DisplayMetrics;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,7 +17,7 @@ import android.widget.FrameLayout;
 import android.widget.PopupWindow;
 
 import com.samluys.filtertab.R;
-import com.samluys.filtertab.Utils;
+import com.samluys.filtertab.util.Utils;
 import com.samluys.filtertab.listener.OnFilterToViewListener;
 
 import java.util.ArrayList;

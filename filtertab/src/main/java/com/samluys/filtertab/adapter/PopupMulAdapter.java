@@ -4,6 +4,8 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextPaint;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +13,7 @@ import android.widget.TextView;
 
 import com.samluys.filtertab.R;
 import com.samluys.filtertab.base.BaseFilterBean;
+import com.samluys.filtertab.util.SpUtils;
 
 import java.util.List;
 
@@ -39,10 +42,14 @@ public class PopupMulAdapter extends RecyclerView.Adapter {
         ViewHolder viewHolder = (ViewHolder) holder;
 
         BaseFilterBean bean = mList.get(position);
+        if (SpUtils.getInstance(mContext).getTextStyle() == 1) {
+            TextPaint textPaint = viewHolder.tv_classify_name.getPaint();
+            textPaint.setFakeBoldText(true);
+        }
         viewHolder.tv_classify_name.setText(bean.getSortTitle());
 
-        final ItemSelectAdapter adapter = new ItemSelectAdapter(mContext, bean.getChildList());
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(mContext, 3);
+        final ItemSelectAdapter adapter = new ItemSelectAdapter(mContext, bean.getChildList(), bean.isCanMulSelect());
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(mContext, SpUtils.getInstance(mContext).getColumnNum());
         viewHolder.rv_select.setLayoutManager(gridLayoutManager);
         viewHolder.rv_select.setAdapter(adapter);
     }

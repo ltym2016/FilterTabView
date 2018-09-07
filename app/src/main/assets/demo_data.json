@@ -1282,6 +1282,7 @@
   ],
   "mulSelect": [
     {
+      "isCan": 1,
       "sortname": "排序",
       "sortdata": [
         {

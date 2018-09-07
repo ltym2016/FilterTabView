@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
@@ -20,7 +21,16 @@
         android:id="@+id/ftb_filter"
         android:layout_width="match_parent"
         android:layout_height="@dimen/tool_bar"
-        android:background="@color/white" />
+        android:background="@color/white"
+        app:btn_solid_select_color="@color/color_e3ecf6"
+        app:btn_solid_unselect_color="@color/color_f5f5f6"
+        app:btn_corner_radius="24dp"
+        app:btn_text_select_color="@color/color_222222"
+        app:btn_text_unselect_color="@color/color_222222"
+        app:tab_text_style="1"
+        app:column_num="3"
+        app:color_main="#60dd6c"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"

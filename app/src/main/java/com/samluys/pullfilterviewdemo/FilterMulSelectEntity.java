@@ -25,6 +25,16 @@ public class FilterMulSelectEntity extends BaseFilterBean {
      */
     private List<FilterSelectedEntity> sortdata;
 
+    private int isCan;
+
+    public int getIsCan() {
+        return isCan;
+    }
+
+    public void setIsCan(int isCan) {
+        this.isCan = isCan;
+    }
+
     public String getSortname() {
         return sortname;
     }
@@ -82,5 +92,10 @@ public class FilterMulSelectEntity extends BaseFilterBean {
     @Override
     public String getSortKey() {
         return sortkey;
+    }
+
+    @Override
+    public boolean isCanMulSelect() {
+        return isCan == 1;
     }
 }

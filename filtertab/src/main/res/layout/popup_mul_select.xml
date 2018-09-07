@@ -18,6 +18,7 @@
         android:layout_height="69dp"
         android:layout_gravity="bottom"
         android:background="@color/white"
+        android:visibility="visible"
         android:orientation="horizontal">
 
         <Button
@@ -50,7 +51,40 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/ll_bottom_2"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_clean"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/clean"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/color_666666"
+            android:background="@color/color_f5f5f6"/>
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/confirm"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:background="@color/color_main"/>
+
+    </LinearLayout>
+
     <View
+        android:id="@+id/v_divide"
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
         android:layout_gravity="bottom"

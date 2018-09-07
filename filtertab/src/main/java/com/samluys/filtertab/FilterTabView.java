@@ -3,8 +3,10 @@ package com.samluys.filtertab;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.support.annotation.Nullable;
+import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +21,8 @@ import com.samluys.filtertab.listener.OnFilterToViewListener;
 import com.samluys.filtertab.listener.OnPopupDismissListener;
 import com.samluys.filtertab.listener.OnSelectFilterNameListener;
 import com.samluys.filtertab.listener.OnSelectResultListener;
+import com.samluys.filtertab.util.SpUtils;
+import com.samluys.filtertab.util.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,10 +52,37 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
     private ArrayList<String> mTextContents = new ArrayList<>();
     private ArrayList<View> mView = new ArrayList<>();
     private IPopupLoader mPopupLoader;
-    private int tab_text_select_color;
-    private int tab_text_unselect_color;
+    /**
+     * 默认字体颜色
+     */
+    private int textDefaultColor;
+    /**
+     * 箭头图片
+     */
     private int tab_arrow_select;
     private int tab_arrow_unselect;
+    /**
+     * 主色
+     */
+    private int colorMain;
+    /**
+     * 筛选Tab字体的样式：0为normal 1为bold
+     */
+    private int tab_text_style;
+    /**
+     * 多选情况下选中和非选中的样式
+     */
+    private int btnStrokeSelect;
+    private int btnStrokeUnselect;
+    private int btnSolidSelect;
+    private int btnSolidUnselect;
+    private float btnCornerRadius;
+    private int btnTextSelect;
+    private int btnTextUnSelect;
+    /**
+     * 多选item的列数
+     */
+    private int columnNum;
     /**
      * FilterTabView和activity的回调
      */
@@ -94,10 +125,40 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
 
         try {
             a = context.obtainStyledAttributes(attrs, R.styleable.FilterTabView);
-            tab_text_select_color = a.getColor(R.styleable.FilterTabView_tab_text_select_color, mContext.getResources().getColor(R.color.color_main));
-            tab_text_unselect_color = a.getColor(R.styleable.FilterTabView_tab_text_unselect_color, mContext.getResources().getColor(R.color.color_default_text));
             tab_arrow_select = a.getResourceId(R.styleable.FilterTabView_tab_arrow_select_color, R.drawable.icon_slat_up);
             tab_arrow_unselect = a.getResourceId(R.styleable.FilterTabView_tab_arrow_unselect_color, R.drawable.icon_slat_down);
+            tab_text_style = a.getInteger(R.styleable.FilterTabView_tab_text_style, 0);
+            colorMain = a.getColor(R.styleable.FilterTabView_color_main, mContext.getResources().getColor(R.color.color_main));
+            textDefaultColor = a.getColor(R.styleable.FilterTabView_text_default_color, mContext.getResources().getColor(R.color.color_default_text));
+            btnStrokeSelect = a.getColor(R.styleable.FilterTabView_btn_stroke_select_color, mContext.getResources().getColor(R.color.color_main));
+            btnStrokeUnselect = a.getColor(R.styleable.FilterTabView_btn_stroke_unselect_color, mContext.getResources().getColor(R.color.color_dfdfdf));
+            btnSolidSelect = a.getColor(R.styleable.FilterTabView_btn_solid_select_color, 0);
+            btnSolidUnselect = a.getColor(R.styleable.FilterTabView_btn_solid_unselect_color, 0);
+            btnCornerRadius = a.getDimension(R.styleable.FilterTabView_btn_corner_radius, mContext.getResources().getDimensionPixelSize(R.dimen.btn_corner_radius));
+            btnTextSelect = a.getColor(R.styleable.FilterTabView_btn_text_select_color, mContext.getResources().getColor(R.color.color_main));
+            btnTextUnSelect = a.getColor(R.styleable.FilterTabView_btn_text_unselect_color, mContext.getResources().getColor(R.color.color_666666));
+            columnNum = a.getInteger(R.styleable.FilterTabView_column_num, 3);
+            // 选中字体为粗体
+            SpUtils.getInstance(context).putTextStyle(tab_text_style);
+            // 主题色
+            SpUtils.getInstance(context).putColorMain(colorMain);
+            // 默认字体颜色
+            SpUtils.getInstance(context).putDefaultTextColor(textDefaultColor);
+            // button边框的颜色
+            SpUtils.getInstance(context).putStrokeSelectColor(btnStrokeSelect);
+            SpUtils.getInstance(context).putStrokeUnSelectColor(btnStrokeUnselect);
+            // button填充的颜色
+            SpUtils.getInstance(context).putSolidSelectColor(btnSolidSelect);
+            SpUtils.getInstance(context).putSolidUnSelectColor(btnSolidUnselect);
+            // button圆角的大小
+            SpUtils.getInstance(context).putCornerRadius(btnCornerRadius);
+            // button 字体颜色
+            SpUtils.getInstance(context).putTextSelect(btnTextSelect);
+            SpUtils.getInstance(context).putTextUnSelect(btnTextUnSelect);
+
+            SpUtils.getInstance(context).putColumnNum(columnNum);
+
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -292,15 +353,20 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
      * 设置箭头方向
      */
     private void setArrowDirection(TextView tv_tab, boolean isUp) {
+        TextPaint textPaint = tv_tab.getPaint();
         if (isUp) {
-            tv_tab.setTextColor(tab_text_select_color);
+            if (tab_text_style == 1) {
+                textPaint.setFakeBoldText(true);
+            }
+
+            tv_tab.setTextColor(btnTextSelect);
             tv_tab.setCompoundDrawablesWithIntrinsicBounds(0, 0, tab_arrow_select, 0);
 
         } else {
-            tv_tab.setTextColor(tab_text_unselect_color);
+            textPaint.setFakeBoldText(false);
+            tv_tab.setTextColor(btnTextUnSelect);
             tv_tab.setCompoundDrawablesWithIntrinsicBounds(0, 0, tab_arrow_unselect, 0);
         }
-
     }
 
     private void showPopView(int currentIndex) {
@@ -390,8 +456,33 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
         }
     }
 
+    @Override
+    public void onFilterListToView(List<FilterResultBean> resultBeans) {
+
+        int popupIndex = resultBeans.get(0).getPopupIndex();
+        String itemName = "";
+        if (resultBeans.size() == 1 && resultBeans.get(0).getItemId() == -1) {
+            // 不限
+            // itemId = -1 即为点击“不限” FilterTabView名称不变
+            mTextViewLists.get(popupIndex).setText(mTextContents.get(popupIndex));
+        } else {
+            for (int i = 0; i < resultBeans.size(); i++) {
+                FilterResultBean resultBean = resultBeans.get(i);
+                if (i == resultBeans.size() - 1) {
+                    itemName = itemName + resultBean.getName();
+                } else {
+                    itemName = itemName + resultBean.getName() + ",";
+                }
+            }
+            Log.e("LUYS", itemName);
+            mTextViewLists.get(popupIndex).setText(itemName);
+        }
+        onSelectResultListener.onSelectResultList(resultBeans);
+    }
+
     /**
      * 通过外部设置Tab的名称
+     *
      * @param popupIndex
      * @param firstId
      * @param name
@@ -405,7 +496,7 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
             BaseFilterBean selectBean = null;
             for (int i = 0; i < list.size(); i++) {
                 BaseFilterBean bean = list.get(i);
-                if(bean.getId() == firstId) {
+                if (bean.getId() == firstId) {
                     bean.setSelecteStatus(1);
                     selectBean = bean;
                 } else {
@@ -420,7 +511,7 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
                         BaseFilterBean childBean = childList.get(j);
                         if (childBean.getId() == secondId) {
                             childBean.setSelecteStatus(1);
-                        } else{
+                        } else {
                             childBean.setSelecteStatus(0);
                         }
                     }
@@ -431,6 +522,7 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
         }
 
     }
+
 
     /**
      * 多次加载 清空数据

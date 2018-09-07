@@ -16,7 +16,9 @@ import com.samluys.filtertab.listener.OnFilterToViewListener;
 
 import java.util.List;
 
-
+/**
+ * 竖直单选样式
+ */
 public class SingleSelectPopupWindow extends BasePopupWindow {
 
     private RecyclerView rv_content;

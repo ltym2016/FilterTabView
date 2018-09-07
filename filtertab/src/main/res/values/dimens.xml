@@ -3,5 +3,6 @@
 
     <dimen name="tool_bar">44dp</dimen>
     <dimen name="rv_height">400dp</dimen>
+    <dimen name="btn_corner_radius">4dp</dimen>
 
 </resources>

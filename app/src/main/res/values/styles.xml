@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="BoldText" parent="@android:style/Widget.TextView">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ItalicText" parent="@android:style/Widget.TextView">
+        <item name="android:textStyle">italic</item>
+    </style>
+
 </resources>

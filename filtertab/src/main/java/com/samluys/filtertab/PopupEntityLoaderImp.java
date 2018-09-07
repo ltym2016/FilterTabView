@@ -5,6 +5,7 @@ import android.widget.PopupWindow;
 
 import com.samluys.filtertab.listener.OnFilterToViewListener;
 import com.samluys.filtertab.popupwindow.AreaSelectPopupWindow;
+import com.samluys.filtertab.popupwindow.GridSelectPopupWindow;
 import com.samluys.filtertab.popupwindow.MulSelectPopupwindow;
 import com.samluys.filtertab.popupwindow.PriceSelectPopupWindow;
 import com.samluys.filtertab.popupwindow.SingleSelectPopupWindow;
@@ -32,6 +33,9 @@ public class PopupEntityLoaderImp implements IPopupLoader {
                 break;
             case FilterTabConfig.FILTER_TYPE_MUL_SELECT:
                 popupWindow = new MulSelectPopupwindow(context,data,filterType,position, onFilterToViewListener);
+                break;
+            case FilterTabConfig.FILTER_TYPE_SINGLE_GIRD:
+                popupWindow = new GridSelectPopupWindow(context,data,filterType,position, onFilterToViewListener);
                 break;
             default:
                 break;

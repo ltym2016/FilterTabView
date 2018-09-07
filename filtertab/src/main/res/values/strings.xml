@@ -19,4 +19,5 @@
     <string name="max_empty">没有输入最大值无法计算</string>
     <string name="min_max">最小值不能大于最大值</string>
     <string name="reset">重置</string>
+    <string name="clean">清除</string>
 </resources>

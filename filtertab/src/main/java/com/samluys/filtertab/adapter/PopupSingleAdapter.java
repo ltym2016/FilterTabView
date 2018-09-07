@@ -3,6 +3,7 @@ package com.samluys.filtertab.adapter;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.text.TextPaint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 import com.samluys.filtertab.R;
 import com.samluys.filtertab.base.BaseFilterBean;
+import com.samluys.filtertab.util.SpUtils;
 
 import java.util.List;
 
@@ -54,9 +56,17 @@ public class PopupSingleAdapter extends RecyclerView.Adapter {
         }
 
         if (bean.getSelecteStatus() == 0) {
-            viewHolder.tv_content.setTextColor(mContext.getResources().getColor(R.color.color_default_text));
+            if (SpUtils.getInstance(mContext).getTextStyle() == 1) {
+                TextPaint textPaint = viewHolder.tv_content.getPaint();
+                textPaint.setFakeBoldText(false);
+            }
+            viewHolder.tv_content.setTextColor(SpUtils.getInstance(mContext).getTextUnSelect());
         } else {
-            viewHolder.tv_content.setTextColor(mContext.getResources().getColor(R.color.color_main));
+            if (SpUtils.getInstance(mContext).getTextStyle() == 1) {
+                TextPaint textPaint = viewHolder.tv_content.getPaint();
+                textPaint.setFakeBoldText(true);
+            }
+            viewHolder.tv_content.setTextColor(SpUtils.getInstance(mContext).getTextSelect());
         }
 
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {

@@ -37,12 +37,14 @@ public class MainActivity extends AppCompatActivity implements OnSelectResultLis
         FilterInfoBean bean2 = new FilterInfoBean("总价", FilterTabConfig.FILTER_TYPE_PRICE, filterEntity.getPrice());
         FilterInfoBean bean3 = new FilterInfoBean("户型", FilterTabConfig.FILTER_TYPE_SINGLE_SELECT, filterEntity.getHouseType());
         FilterInfoBean bean4 = new FilterInfoBean("筛选", FilterTabConfig.FILTER_TYPE_MUL_SELECT, filterEntity.getMulSelect());
+        FilterInfoBean bean5 = new FilterInfoBean("几室", FilterTabConfig.FILTER_TYPE_SINGLE_GIRD, filterEntity.getHouseType());
 
 
         ftb_filter.addFilterItem(bean1.getTabName(), bean1.getFilterData(), bean1.getPopupType(), 0);
         ftb_filter.addFilterItem(bean2.getTabName(), bean2.getFilterData(), bean2.getPopupType(), 1);
         ftb_filter.addFilterItem(bean3.getTabName(), bean3.getFilterData(), bean3.getPopupType(), 2);
         ftb_filter.addFilterItem(bean4.getTabName(), bean4.getFilterData(), bean4.getPopupType(), 3);
+        ftb_filter.addFilterItem(bean5.getTabName(), bean5.getFilterData(), bean5.getPopupType(), 4);
 
         final TextView toolbar = findViewById(R.id.toolbar);
         toolbar.post(new Runnable() {
@@ -116,6 +118,21 @@ public class MainActivity extends AppCompatActivity implements OnSelectResultLis
             message =resultBean.getItemId()+":"+resultBean.getName();
         }
 
+        Toast.makeText(this,message,Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onSelectResultList(List<FilterResultBean> resultBeans) {
+        String message="";
+        List<FilterResultBean> list = resultBeans;
+        for (int i = 0; i < list.size(); i++) {
+            FilterResultBean bean = list.get(i);
+            if (i == (list.size() - 1)) {
+                message = message + bean.getName();
+            } else {
+                message = message + bean.getName() + ",";
+            }
+        }
         Toast.makeText(this,message,Toast.LENGTH_LONG).show();
     }
 }
