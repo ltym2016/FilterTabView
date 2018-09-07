@@ -45,7 +45,8 @@ compile 'com.samlu:filtertab:1.1.0'
     app:column_num="3"
     app:color_main="#60dd6c"/>
 ```
-
+自定义属性|说明
+---|---
 tab_arrow_select_color | 筛选Tab选择的图片
 tab_arrow_unselect_color|筛选Tab选择的图片
 tab_text_style | 选中状态是否为粗体 0为否 1为是 默认为0
