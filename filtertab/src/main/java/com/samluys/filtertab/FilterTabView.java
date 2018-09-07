@@ -52,10 +52,7 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
     private ArrayList<String> mTextContents = new ArrayList<>();
     private ArrayList<View> mView = new ArrayList<>();
     private IPopupLoader mPopupLoader;
-    /**
-     * 默认字体颜色
-     */
-    private int textDefaultColor;
+
     /**
      * 箭头图片
      */
@@ -129,7 +126,6 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
             tab_arrow_unselect = a.getResourceId(R.styleable.FilterTabView_tab_arrow_unselect_color, R.drawable.icon_slat_down);
             tab_text_style = a.getInteger(R.styleable.FilterTabView_tab_text_style, 0);
             colorMain = a.getColor(R.styleable.FilterTabView_color_main, mContext.getResources().getColor(R.color.color_main));
-            textDefaultColor = a.getColor(R.styleable.FilterTabView_text_default_color, mContext.getResources().getColor(R.color.color_default_text));
             btnStrokeSelect = a.getColor(R.styleable.FilterTabView_btn_stroke_select_color, mContext.getResources().getColor(R.color.color_main));
             btnStrokeUnselect = a.getColor(R.styleable.FilterTabView_btn_stroke_unselect_color, mContext.getResources().getColor(R.color.color_dfdfdf));
             btnSolidSelect = a.getColor(R.styleable.FilterTabView_btn_solid_select_color, 0);
@@ -142,8 +138,6 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
             SpUtils.getInstance(context).putTextStyle(tab_text_style);
             // 主题色
             SpUtils.getInstance(context).putColorMain(colorMain);
-            // 默认字体颜色
-            SpUtils.getInstance(context).putDefaultTextColor(textDefaultColor);
             // button边框的颜色
             SpUtils.getInstance(context).putStrokeSelectColor(btnStrokeSelect);
             SpUtils.getInstance(context).putStrokeUnSelectColor(btnStrokeUnselect);

@@ -58,19 +58,6 @@ public class SpUtils {
     }
 
     /**
-     * 默认字体颜色
-     * @param value
-     */
-    public void putDefaultTextColor(int value) {
-        editor.putInt("default_text_color", value);
-        editor.commit();
-    }
-
-    public int getDefaultTextColor() {
-        return sharedPreferences.getInt("default_text_color", mContext.getResources().getColor(R.color.color_default_text));
-    }
-
-    /**
      * button选中后边框的颜色
      * @param value
      */

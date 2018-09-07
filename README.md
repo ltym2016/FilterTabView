@@ -4,20 +4,21 @@
 
 ## 基于Popupwindow的下拉筛选控件
 <img src="https://github.com/ltym2016/FilterTabView/blob/master/video2gif_20180713_144109.gif" width="200"  align=center /> <img src="https://github.com/ltym2016/FilterTabView/blob/master/Screenshot1.png" width="200"  align=center /> <img src="https://github.com/ltym2016/FilterTabView/blob/master/Screenshot2.png" width="200"  align=center />
-<img src="https://github.com/ltym2016/FilterTabView/blob/master/Screenshot3.png" width="200"  align=center /> <img src="https://github.com/ltym2016/FilterTabView/blob/master/Screenshot4.png" width="200"  align=center />
+<img src="https://github.com/ltym2016/FilterTabView/blob/master/Screenshot3.png" width="200"  align=center /> <img src="https://github.com/ltym2016/FilterTabView/blob/master/Screenshot4.png" width="200"  align=center /> <img src="https://github.com/ltym2016/FilterTabView/blob/master/Screenshot5.png" width="200"  align=center />
 
 
 功能|区分
 ---|---
-支持区域二级选择| FilterTabConfig.FILTER_TYPE_AREA
-支持单行选择 |FilterTabConfig.FILTER_TYPE_SINGLE_SELECT
+支持区域二级联动选择| FilterTabConfig.FILTER_TYPE_AREA
+支持单行List样式选择 |FilterTabConfig.FILTER_TYPE_SINGLE_SELECT
 支持带EditText的单行选择 |FilterTabConfig.FILTER_TYPE_PRICE
 支持多类型选择| FilterTabConfig.FILTER_TYPE_MUL_SELECT
+支持Grid样式多选| FilterTabConfig.FILTER_TYPE_SINGLE_GIRD
 - 目前只支持以上4种类型的Popupwindow样式，可以自由组合
 # 如何使用
 ## Gradle
  ```
-compile 'com.samlu:filtertab:1.0.0'
+compile 'com.samlu:filtertab:1.1.0'
 ```
 ## Maven
 ```
@@ -31,11 +32,33 @@ compile 'com.samlu:filtertab:1.0.0'
 ## XML
 ```
 <com.samluys.filtertab.FilterTabView
-  android:id="@+id/ftb_filter"
-  android:layout_width="match_parent"
-  android:layout_height="@dimen/tool_bar"
-  android:background="@color/white" />
+    android:id="@+id/ftb_filter"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tool_bar"
+    android:background="@color/white"
+    app:btn_solid_select_color="@color/color_e3ecf6"
+    app:btn_solid_unselect_color="@color/color_f5f5f6"
+    app:btn_corner_radius="24dp"
+    app:btn_text_select_color="@color/color_222222"
+    app:btn_text_unselect_color="@color/color_222222"
+    app:tab_text_style="1"
+    app:column_num="3"
+    app:color_main="#60dd6c"/>
 ```
+
+tab_arrow_select_color | 筛选Tab选择的图片
+tab_arrow_unselect_color|筛选Tab选择的图片
+tab_text_style | 选中状态是否为粗体 0为否 1为是 默认为0
+color_main | 主题色
+btn_stroke_select_color| 选中button边框颜色 
+btn_stroke_unselect_color|未选中button边框颜色 
+btn_solid_select_color |选中button填充颜色
+btn_solid_unselect_color| 未选中button填充颜色
+btn_corner_radius | button圆角大小
+btn_text_select_color| 选中字体颜色
+btn_text_unselect_color| 未选中字体颜色
+column_num |grid样式下的列数
+
 ## Java
 ```
 FilterInfoBean bean1 = new FilterInfoBean("区域", FilterTabConfig.FILTER_TYPE_AREA, filterEntity.getArea());
