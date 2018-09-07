@@ -18,14 +18,14 @@
 # 如何使用
 ## Gradle
  ```
-compile 'com.samlu:filtertab:1.1.0'
+compile 'com.samlu:filtertab:1.1.1'
 ```
 ## Maven
 ```
 <dependency>
   <groupId>com.samlu</groupId>
   <artifactId>filtertab</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1</version>
   <type>pom</type>
 </dependency>
 ```
