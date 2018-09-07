@@ -14,7 +14,7 @@
 支持带EditText的单行选择 |FilterTabConfig.FILTER_TYPE_PRICE
 支持多类型选择| FilterTabConfig.FILTER_TYPE_MUL_SELECT
 支持Grid样式多选| FilterTabConfig.FILTER_TYPE_SINGLE_GIRD
-- 目前只支持以上4种类型的Popupwindow样式，可以自由组合
+- 目前只支持以上5种类型的Popupwindow样式，可以自由组合
 # 如何使用
 ## Gradle
  ```
@@ -25,7 +25,7 @@ compile 'com.samlu:filtertab:1.1.0'
 <dependency>
   <groupId>com.samlu</groupId>
   <artifactId>filtertab</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <type>pom</type>
 </dependency>
 ```
