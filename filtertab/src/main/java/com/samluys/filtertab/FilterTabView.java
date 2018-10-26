@@ -252,6 +252,26 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
                         break;
                     }
                 }
+                // Gird型多选/单选
+            } else if (filterType == FilterTabConfig.FILTER_TYPE_SINGLE_GIRD) {
+                List<BaseFilterBean> selectList = new ArrayList<>();
+                for (int i = 0; i < size; i++) {
+                    BaseFilterBean resultBean = list.get(i);
+                    if (resultBean.getSelecteStatus() == 1 && resultBean.getId() != -1) {
+                        selectList.add(resultBean);
+                    }
+                }
+
+
+                for (int i = 0; i < selectList.size(); i++) {
+                    BaseFilterBean bean = selectList.get(i);
+                    if (i == selectList.size() - 1) {
+                        tabName = tabName + bean.getItemName();
+                    } else {
+                        tabName = tabName + bean.getItemName() + ",";
+                    }
+                }
+
                 // 区域选择
             } else if (filterType == FilterTabConfig.FILTER_TYPE_AREA) {
                 // 先看二级分类有没有选择的
@@ -403,7 +423,8 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
 
         // 单行只有一个层级的点击
         if (resultBean.getPopupType() == FilterTabConfig.FILTER_TYPE_SINGLE_SELECT
-                || resultBean.getPopupType() == FilterTabConfig.FILTER_TYPE_PRICE) {
+                || resultBean.getPopupType() == FilterTabConfig.FILTER_TYPE_PRICE
+                || resultBean.getPopupType() == FilterTabConfig.FILTER_TYPE_SINGLE_GIRD) {
 
             int itemId = resultBean.getItemId();
             String itemName = resultBean.getName();
