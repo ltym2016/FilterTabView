@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.ltym2016'
 
 android {
     compileSdkVersion 27
@@ -38,11 +39,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
 
-publish {
-    userOrg = 'samlu'//bintray.com用户名
-    groupId = 'com.samlu'//jcenter上的路径
-    artifactId = 'filtertab'//项目名称
-    publishVersion = '1.1.4'//版本号
-    desc = 'Oh hi, this is a nice description for a project, right?'//描述，不重要
-    website = 'https://github.com/ltym2016/FilterTabView'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
-}
+//publish {
+//    userOrg = 'samlu'//bintray.com用户名
+//    groupId = 'com.samlu'//jcenter上的路径
+//    artifactId = 'filtertab'//项目名称
+//    publishVersion = '1.1.4'//版本号
+//    desc = 'Oh hi, this is a nice description for a project, right?'//描述，不重要
+//    website = 'https://github.com/ltym2016/FilterTabView'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
+//}
