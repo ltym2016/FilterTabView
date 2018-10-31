@@ -17,17 +17,37 @@
 - 目前只支持以上5种类型的Popupwindow样式，可以自由组合
 # 如何使用
 ## Gradle
+- Add it in your root build.gradle at the end of repositories:
  ```
-compile 'com.samlu:filtertab:1.1.2'
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
+- Add the dependency
+```
+dependencies {        
+    implementation 'com.github.ltym2016:FilterTabView:-SNAPSHOT'
+}
+
+```
+
 ## Maven
 ```
-<dependency>
-  <groupId>com.samlu</groupId>
-  <artifactId>filtertab</artifactId>
-  <version>1.1.2</version>
-  <type>pom</type>
-</dependency>
+<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+	
+	<dependency>
+    	    <groupId>com.github.ltym2016</groupId>
+    	    <artifactId>FilterTabView</artifactId>
+    	    <version>-SNAPSHOT</version>
+    	</dependency>
 ```
 ## XML
 ```
