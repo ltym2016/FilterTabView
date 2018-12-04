@@ -29,7 +29,7 @@ allprojects {
 - Add the dependency
 ```
 dependencies {        
-    implementation 'com.github.ltym2016:FilterTabView:-SNAPSHOT'
+    implementation 'com.github.ltym2016:FilterTabView:1.1.5'
 }
 
 ```
@@ -46,7 +46,7 @@ dependencies {
 	<dependency>
     	    <groupId>com.github.ltym2016</groupId>
     	    <artifactId>FilterTabView</artifactId>
-    	    <version>-SNAPSHOT</version>
+    	    <version>1.1.5</version>
     	</dependency>
 ```
 ## XML
