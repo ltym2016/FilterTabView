@@ -241,4 +241,9 @@ public class PriceSelectPopupWindow extends BasePopupWindow {
             }
         });
     }
+
+    @Override
+    public void refreshData() {
+
+    }
 }

@@ -1,24 +1,30 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="270dp"
         android:overScrollMode="never"
-        android:layout_marginBottom="69dp"
         android:background="@color/white"
         android:scrollbars="none" />
 
+
+    <View
+        android:id="@+id/v_divide"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:background="@color/color_cccccc" />
 
     <LinearLayout
         android:id="@+id/ll_bottom"
         android:layout_width="match_parent"
         android:layout_height="69dp"
-        android:layout_gravity="bottom"
         android:background="@color/white"
-        android:visibility="visible"
+        android:visibility="gone"
         android:orientation="horizontal">
 
         <Button
@@ -55,8 +61,7 @@
         android:id="@+id/ll_bottom_2"
         android:layout_width="match_parent"
         android:layout_height="69dp"
-        android:layout_gravity="bottom"
-        android:visibility="gone"
+        android:visibility="visible"
         android:orientation="horizontal">
 
         <TextView
@@ -83,14 +88,13 @@
 
     </LinearLayout>
 
+
     <View
-        android:id="@+id/v_divide"
+        android:id="@+id/v_outside"
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="69dp"
-        android:background="@color/color_cccccc" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_bottom"
+        android:background="@color/transparent"/>
 
 
-
-</FrameLayout>
+</LinearLayout>

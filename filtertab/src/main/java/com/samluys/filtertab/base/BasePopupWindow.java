@@ -123,6 +123,8 @@ public abstract class BasePopupWindow extends PopupWindow {
      */
     public abstract void initSelectData();
 
+    public abstract void refreshData();
+
 
     /**
      * 如果有需要,子类会重写该方法,
@@ -145,7 +147,7 @@ public abstract class BasePopupWindow extends PopupWindow {
         setInputMethodMode(PopupWindow.INPUT_METHOD_NEEDED);
         setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN | WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
 
-
+        refreshData();
         if (Build.VERSION.SDK_INT >= 25) {
             Rect rect = new Rect();
             anchor.getGlobalVisibleRect(rect);

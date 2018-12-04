@@ -66,4 +66,9 @@ public class SingleSelectPopupWindow extends BasePopupWindow {
             }
         });
     }
+
+    @Override
+    public void refreshData() {
+
+    }
 }

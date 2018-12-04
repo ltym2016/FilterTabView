@@ -38,6 +38,7 @@ public class MulSelectPopupwindow extends BasePopupWindow implements View.OnClic
     private TextView tv_clean;
     private TextView tv_confirm;
     private View v_divide;
+    private View v_outside;
 
 
     public MulSelectPopupwindow(Context context, List data, int filterType, int position, OnFilterToViewListener onFilterToViewListener) {
@@ -55,20 +56,21 @@ public class MulSelectPopupwindow extends BasePopupWindow implements View.OnClic
         tv_clean = rootView.findViewById(R.id.tv_clean);
         tv_confirm = rootView.findViewById(R.id.tv_confirm);
         v_divide = rootView.findViewById(R.id.v_divide);
+        v_outside = rootView.findViewById(R.id.v_outside);
         mAdapter = new PopupMulAdapter(getContext(), getData());
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         rv_content.setLayoutManager(linearLayoutManager);
         rv_content.setAdapter(mAdapter);
         mSelectList = new ArrayList<>();
 
-        FrameLayout.LayoutParams layoutParams = (FrameLayout.LayoutParams) rv_content.getLayoutParams();
-        FrameLayout.LayoutParams bottomParams = (FrameLayout.LayoutParams) ll_bottom.getLayoutParams();
-        FrameLayout.LayoutParams bottomParams2 = (FrameLayout.LayoutParams) ll_bottom_2.getLayoutParams();
+        LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) rv_content.getLayoutParams();
+        LinearLayout.LayoutParams bottomParams = (LinearLayout.LayoutParams) ll_bottom.getLayoutParams();
+        LinearLayout.LayoutParams bottomParams2 = (LinearLayout.LayoutParams) ll_bottom_2.getLayoutParams();
         if(SpUtils.getInstance(mContext).getTextStyle() == 1) {
             ll_bottom_2.setVisibility(View.VISIBLE);
             ll_bottom.setVisibility(View.GONE);
             v_divide.setVisibility(View.GONE);
-            layoutParams.bottomMargin = Utils.dp2px(mContext, 48);
+//            layoutParams.bottomMargin = Utils.dp2px(mContext, 48);
             rv_content.setLayoutParams(layoutParams);
 
             bottomParams.height = Utils.dp2px(mContext, 48);
@@ -78,7 +80,7 @@ public class MulSelectPopupwindow extends BasePopupWindow implements View.OnClic
             ll_bottom_2.setVisibility(View.GONE);
             ll_bottom.setVisibility(View.VISIBLE);
             v_divide.setVisibility(View.VISIBLE);
-            layoutParams.bottomMargin = Utils.dp2px(mContext, 69);
+//            layoutParams.bottomMargin = Utils.dp2px(mContext, 69);
             rv_content.setLayoutParams(layoutParams);
 
             bottomParams2.height = Utils.dp2px(mContext, 69);
@@ -87,6 +89,15 @@ public class MulSelectPopupwindow extends BasePopupWindow implements View.OnClic
 
         tv_confirm.setBackgroundColor(SpUtils.getInstance(mContext).getColorMain());
         tv_clean.setBackgroundColor(mContext.getResources().getColor(R.color.color_f5f5f6));
+
+        v_outside.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isShowing()) {
+                    dismiss();
+                }
+            }
+        });
         return rootView;
     }
 
@@ -176,5 +187,10 @@ public class MulSelectPopupwindow extends BasePopupWindow implements View.OnClic
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public void refreshData() {
+        mAdapter.notifyDataSetChanged();
     }
 }

@@ -93,4 +93,11 @@ public class GridSelectPopupWindow extends BasePopupWindow {
             }
         });
     }
+
+    @Override
+    public void refreshData() {
+        if (mAdapter != null) {
+            mAdapter.notifyDataSetChanged();
+        }
+    }
 }

@@ -179,4 +179,9 @@ public class AreaSelectPopupWindow extends BasePopupWindow implements OnAdapterR
         mCurrentClickParentBean = selectBean;
         mParentAdapter.notifyDataSetChanged();
     }
+
+    @Override
+    public void refreshData() {
+
+    }
 }
