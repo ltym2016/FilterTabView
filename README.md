@@ -29,7 +29,7 @@ allprojects {
 - Add the dependency
 ```
 dependencies {        
-    implementation 'com.github.ltym2016:FilterTabView:1.1.5'
+    implementation 'com.github.ltym2016:FilterTabView:1.1.7'
 }
 
 ```
