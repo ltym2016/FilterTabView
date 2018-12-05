@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements OnSelectResultLis
         FilterInfoBean bean3 = new FilterInfoBean("户型", FilterTabConfig.FILTER_TYPE_SINGLE_SELECT, filterEntity.getHouseType());
         FilterInfoBean bean4 = new FilterInfoBean("筛选", FilterTabConfig.FILTER_TYPE_MUL_SELECT, filterEntity.getMulSelect());
         FilterInfoBean bean5 = new FilterInfoBean("几室", FilterTabConfig.FILTER_TYPE_SINGLE_GIRD, filterEntity.getHouseType());
+        FilterInfoBean bean6 = new FilterInfoBean("几室", FilterTabConfig.FILTER_TYPE_SINGLE_GIRD, filterEntity.getPrice());
 
 
         ftb_filter.addFilterItem(bean1.getTabName(), bean1.getFilterData(), bean1.getPopupType(), 0);
@@ -45,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements OnSelectResultLis
         ftb_filter.addFilterItem(bean3.getTabName(), bean3.getFilterData(), bean3.getPopupType(), 2);
         ftb_filter.addFilterItem(bean4.getTabName(), bean4.getFilterData(), bean4.getPopupType(), 3);
         ftb_filter.addFilterItem(bean5.getTabName(), bean5.getFilterData(), bean5.getPopupType(), 4);
+        ftb_filter.addFilterItem(bean6.getTabName(), bean6.getFilterData(), bean6.getPopupType(), 5);
+
+
 
         final TextView toolbar = findViewById(R.id.toolbar);
         toolbar.post(new Runnable() {

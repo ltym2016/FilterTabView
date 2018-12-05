@@ -388,32 +388,32 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
     }
 
     private void showPopView(int currentIndex, int filterType) {
-        try {
-            if (mPopupWs.size() > currentIndex && mPopupWs.get(currentIndex) != null) {
+        if (mPopupWs.size() > currentIndex && mPopupWs.get(currentIndex) != null) {
 
-                // 重置选择的值，只会显示点击确定后的值
+            // 重置选择的值，只会显示点击确定后的值
+            try {
                 resetSelectData(currentIndex, filterType);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
 
-                //遍历, 将 不是该位置的window消失
-                for (int i = 0; i < mPopupWs.size(); i++) {
-                    if (i != currentIndex) {
-                        mPopupWs.get(i).dismiss();
-                        setArrowDirection(mTextViewLists.get(i), false);
-                    } else {
-                        setArrowDirection(mTextViewLists.get(i), true);
-                    }
-                }
-                //如果该位置正在展示,就让他消失.如果没有,就展示
-                if (mPopupWs.get(currentIndex).isShowing()) {
-                    mPopupWs.get(currentIndex).dismiss();
+            //遍历, 将 不是该位置的window消失
+            for (int i = 0; i < mPopupWs.size(); i++) {
+                if (i != currentIndex) {
+                    mPopupWs.get(i).dismiss();
+                    setArrowDirection(mTextViewLists.get(i), false);
                 } else {
-
-                    mPopupWs.get(currentIndex).show(this);
+                    setArrowDirection(mTextViewLists.get(i), true);
                 }
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+            //如果该位置正在展示,就让他消失.如果没有,就展示
+            if (mPopupWs.get(currentIndex).isShowing()) {
+                mPopupWs.get(currentIndex).dismiss();
+            } else {
+
+                mPopupWs.get(currentIndex).show(this);
+            }
         }
     }
 
@@ -580,7 +580,6 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
                     itemName = itemName + resultBean.getName() + ",";
                 }
             }
-            Log.e("LUYS", itemName);
             mTextViewLists.get(popupIndex).setText(itemName);
         }
         mHasSelected.put(popupIndex, resultBeans);
@@ -642,6 +641,7 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
         mTabPostion = -1;
         currentIndex = -1;
         mDataList.clear();
+        mHasSelected.clear();
         removeAllViews();
     }
 }
