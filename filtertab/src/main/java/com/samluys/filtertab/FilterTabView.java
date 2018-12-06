@@ -641,7 +641,15 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
         mTabPostion = -1;
         currentIndex = -1;
         mDataList.clear();
-        mHasSelected.clear();
         removeAllViews();
+    }
+
+    /**
+     * 清楚选择的数据
+     */
+    public void clearSelected() {
+        if(mHasSelected != null) {
+            mHasSelected.clear();
+        }
     }
 }
