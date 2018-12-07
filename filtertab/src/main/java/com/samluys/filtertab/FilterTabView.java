@@ -316,7 +316,6 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
                             BaseFilterBean childBean = childList.get(j);
                             if (childBean.getSelecteStatus() == 1 && childBean.getId() != -1) {
                                 count++;
-                                break;
                             }
                         }
                     }
