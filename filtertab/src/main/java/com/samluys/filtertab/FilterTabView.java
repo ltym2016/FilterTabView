@@ -184,7 +184,7 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
             mPopupLoader = new PopupEntityLoaderImp();
         }
 
-        BasePopupWindow basePopupWindow =
+        final BasePopupWindow basePopupWindow =
                 (BasePopupWindow) mPopupLoader.getPopupEntity(mContext, data, filterType, popupIndex, this, this);
         mPopupWs.add(basePopupWindow);
 
@@ -200,9 +200,18 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
         basePopupWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
             @Override
             public void onDismiss() {
-                setArrowDirection(tv_tab_name, false);
-                if (onPopupDismissListener != null) {
-                    onPopupDismissListener.onDismiss();
+                try {
+                    int filterType = basePopupWindow.getFilterType();
+                    int position = basePopupWindow.getPosition();
+
+                    resetSelectData(position,filterType);
+
+                    setArrowDirection(tv_tab_name, false);
+                    if (onPopupDismissListener != null) {
+                        onPopupDismissListener.onDismiss();
+                    }
+                } catch (Exception e) {
+
                 }
             }
         });
