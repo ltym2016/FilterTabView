@@ -7,10 +7,10 @@ import android.content.SharedPreferences;
 import com.samluys.filtertab.R;
 
 public class SpUtils {
-    public static final String PREFERENCE_NAME = "config_info";
+    private static final String PREFERENCE_NAME = "config_info";
     private static SpUtils instance;
     private SharedPreferences sharedPreferences;
-    private static SharedPreferences.Editor editor;
+    private SharedPreferences.Editor editor;
     private Context mContext;
 
     private SpUtils (Context context) {
@@ -24,7 +24,7 @@ public class SpUtils {
         if (instance == null) {
             synchronized (SharedPreferences.class){
                 if (instance == null) {
-                    instance = new SpUtils(context);
+                    instance = new SpUtils(context.getApplicationContext());
                 }
             }
         }
