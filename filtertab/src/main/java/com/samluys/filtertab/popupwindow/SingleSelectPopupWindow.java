@@ -1,6 +1,7 @@
 package com.samluys.filtertab.popupwindow;
 
 import android.content.Context;
+import android.graphics.Rect;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -13,8 +14,11 @@ import com.samluys.filtertab.adapter.PopupSingleAdapter;
 import com.samluys.filtertab.base.BaseFilterBean;
 import com.samluys.filtertab.base.BasePopupWindow;
 import com.samluys.filtertab.listener.OnFilterToViewListener;
+import com.samluys.filtertab.util.Utils;
 
 import java.util.List;
+
+import static android.view.View.MeasureSpec.AT_MOST;
 
 /**
  * 竖直单选样式
@@ -33,7 +37,13 @@ public class SingleSelectPopupWindow extends BasePopupWindow {
         View rootView = LayoutInflater.from(getContext()).inflate(R.layout.popup_single_select, null,false);
         rv_content = rootView.findViewById(R.id.rv_content);
         mAdapter = new PopupSingleAdapter(getContext(), getData());
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+        final int maxHeight = Utils.dp2px(getContext(), 273);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext()){
+            @Override
+            public void setMeasuredDimension(Rect childrenBounds, int wSpec, int hSpec) {
+                super.setMeasuredDimension(childrenBounds, wSpec, View.MeasureSpec.makeMeasureSpec(maxHeight, AT_MOST));
+            }
+        };
         rv_content.setLayoutManager(linearLayoutManager);
         rv_content.setAdapter(mAdapter);
 
