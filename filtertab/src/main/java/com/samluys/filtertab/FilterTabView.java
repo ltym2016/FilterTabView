@@ -637,6 +637,15 @@ public class FilterTabView extends LinearLayout implements OnFilterToViewListene
 
     }
 
+    /**
+     * 设置主题色
+     * @param colorId
+     */
+    public void setColorMain(int colorId) {
+        this.colorMain = colorId;
+        SpUtils.getInstance(mContext).putColorMain(colorMain);
+    }
+
 
     /**
      * 多次加载 清空数据

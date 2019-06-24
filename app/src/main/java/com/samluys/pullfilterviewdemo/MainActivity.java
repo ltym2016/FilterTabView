@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements OnSelectResultLis
         FilterEntity filterEntity = JsonToObject(jsonStr, FilterEntity.class);
 
         FilterTabView ftb_filter = findViewById(R.id.ftb_filter);
+        ftb_filter.setColorMain(getResources().getColor(R.color.color_FF6F00));
         ftb_filter.removeViews();
         FilterInfoBean bean1 = new FilterInfoBean("区域", FilterTabConfig.FILTER_TYPE_AREA, filterEntity.getArea());
         FilterInfoBean bean2 = new FilterInfoBean("总价", FilterTabConfig.FILTER_TYPE_PRICE, filterEntity.getPrice());

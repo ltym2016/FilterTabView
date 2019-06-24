@@ -29,7 +29,6 @@
         app:btn_text_unselect_color="@color/color_222222"
         app:tab_text_style="1"
         app:column_num="3"
-        app:color_main="#60dd6c"
         />
 
     <LinearLayout
